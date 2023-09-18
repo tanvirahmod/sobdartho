@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="HSC ICT 2's Compliment 8 Bit Substraction Calculator">
+  <title>এইচএসসি ICT দুই এর পরিপূরক এর বিয়োগ করার কেলকুলেটর</title>
+  <link rel="stylesheet" href="../css/calc.css">
+
+
+<body>
+
+  <div class="innerarea">
+        <div class="homebuttons">
+        <div class="header">
+        <h1><a href="/">SOBDARTHO</a>  </h1>
+        <nav>
+          <button> <a href="/calculator">Calculator</a> </button>
+        </nav>
+
+        </div>
+    </div>
+    <div class="poripurok">
+      <h1>এইচএসসি ICT দুই এর পরিপূরক এর <br> বিয়োগ করার ক্যালকুলেটর</h1>
+      <br>
+      <h2>HSC ICT 2's Compliment 8 Bit Substraction Calculator</h2>
+      <button class="btn"><a href="/calculator/addition">যোগ করতে ক্লিক করুন</a></button>
+      <div class="form">
+        <form class="" action="index.html" method="post">
+
+
+
+          <div class="beauty">
+            <label>১ম সংখ্যা</label>
+            <select class="select1" name="">
+              <option>Decimal</option>
+              <option>Binary</option>
+              <option>Hexadecimal</option>
+              <option>Octal</option>
+            </select>
+            <input class="firstDigit" type="text" placeholder="এখানে লিখুন"><br>
+          </div>
+
+
+
+          <div class="beauty">
+            <label>২য় সংখ্যা</label>
+            <select class="select2" name="">
+              <option>Decimal</option>
+              <option>Binary</option>
+              <option>Hexadecimal</option>
+              <option>Octal</option>
+            </select>
+
+            <input class="secondDigit" type="text" placeholder="এখানে লিখুন">
+          </div>
+
+          <button type="button" class="button" name="button">ফলাফল দেখুন</button>
+        </form>
+
+        <div class="output">
+          <div class="details outputSection">
+            <p class="same">.</p>
+            <p class="change">.</p>
+          </div>
+          <div class="outputSection">
+            <p class="messageHTML">প্রথম সংখ্যা</p>
+            <p class="firstNumber ws">+00 = 00000000</p>
+          </div>
+
+          <div class="outputSection">
+            <p class="messageHTML">২য় সংখ্যা</p>
+            <p class="secondNumber ws">+00 = 00000000</p>
+          </div>
+
+          <div class="finalOutput outputSection">
+            <p class="message">এখন যোগ করতে হবে</p>
+            <p class="oddEven1 ws">.</p>
+            <p class="oddEven2 ws">.</p>
+            <p>---------------------</p>
+            <p class="oddEven3 ws">.</p>
+            <p class="oddEven4 ws">.</p>
+            <p class="oddEven5 ws">.</p>
+            <p class="oddEven7">---------------------</p>
+            <p class="oddEven6 ws">.</p>
+          </div>
+          <div class="allAnswer outputSection">
+            <center><p class="messageHTML">উত্তর সমূহ</p>
+            <p class="answerDecimal">.</p>
+            <p class="answerOctal">.</p>
+            <p class="answerHexadecimal">.</p>
+            </center>
+          </div>
+                    <center>
+            <footer class="outputSection">
+                <p>Developed By</p>
+                <a href="https://www.facebook.com/tanvir.webdev">Muhammad Tanvir</a>
+            </footer>
+            </center>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="../js/sub.js">
+
+  </script>
+  <%- include('../partials/google_analytics.ejs'); %>
+</body>
+</html>

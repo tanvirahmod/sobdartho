@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HSC ICT 2's Compliment Calculator</title>
+    <meta name="description" content="HSC ICT 2's Compliment Calculator in Bangladesh">
+    <link rel="stylesheet" href="css/calc.css">
+   <%- include('../partials/head.ejs'); %>
+   <%- include('../partials/css.ejs'); %>
+</head>
+
+
+<body>
+    <%- include('../partials/header_nav.ejs'); %>
+
+    <div class="area">
+        <div class="calculator">
+            <div class="intro">
+              <h1>The Only HSC ICT 2's Compliment Calculator in Bangladesh</h1>
+              <h2>For Large Number You Should Always Use 16 Bit Calculators</h2>
+              <p>You do not need to worry any more thinking your answer is correct or not. Here i'm providin the only solution to check your 2's compliment addition and substraction's answer by one click. Enjoy this amazing calculator</p>
+            </div>
+            <div class="boxes1">
+              <div class="innerb">
+                <h3>8 Bit 2's Compliment Addition</h3>
+                <p>Click below button to go for addition</p>
+                <a href="/calculator/addition"><button>Addition</button></a>
+              </div>
+        
+              <div class="innerb">
+                <h3>8 Bit 2's Compliment Substraction</h3>
+                <p>Click below button to go for Substraction</p>
+                <a href="/calculator/substraction"><button>Substraction</button></a>
+              </div>
+              
+                <div class="innerb">
+                <h3>16 Bit 2's Compliment Addition</h3>
+                <p>Click below button to go for addition</p>
+        
+                <a href="/calculator/addition16"><button>Addition</button></a>
+              </div>
+        
+              <div class="innerb">
+                <h3>16 Bit 2's Compliment Substraction</h3>
+                <p>Click below button to go for Substraction</p>
+                <a href="/calculator/substraction16"><button>Substraction</button></a>
+              </div>
+        
+            </div>
+        
+          </div>
+
+
+
+
+
+    <%- include('../partials/footer.ejs'); %>
+
+    </div>
+
+    <script type="text/javascript">
+        function toggle() {
+            var test = document.getElementById("navbar");
+            if (test.className == "hidden") {
+                test.className = "show";
+            } else {
+                test.className = "hidden";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
+

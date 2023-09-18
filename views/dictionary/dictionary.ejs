@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <%- include('../partials/head.ejs'); %>
+
+   <title><%= word.replace(/-/g, ' ') %> - Bengali Meaning - <%= word.replace(/-/g, ' ') %> Meaning in Bengali at sobdartho.com | <%= word.replace(/-/g, ' ') %> শব্দের বাংলা অর্থ </title>
+   <meta name="keyword" content="<%= word.replace(/-/g, ' ') %>, <%= word.replace(/-/g, ' ') %> bengali meaning, <%= word.replace(/-/g, ' ') %> meaning, <%= word.replace(/-/g, ' ') %> বাংলা অর্থ, English to Bangla dictionary, English to Bengali Dictionary, antonyms, synonyms, অভিধান, শব্দার্থ, Words, Bangla Academy Dictionary" />
+   <meta name="description" content="<%= word.replace(/-/g, ' ') %> meaning in Bengali - <%- info.meaning.replace(/-/g, ' ')%>; | <%= word.replace(/-/g, ' ') %> এর বাংলা অর্থ, What is the definition of <%= word.replace(/-/g, ' ') %> in Bengali? What is the meaning of <%= word.replace(/-/g, ' ') %> in Bengali?">
+   
+   <meta property="og:title" content="<%= word.replace(/-/g, ' ') %> - Bengali Meaning - <%= word.replace(/-/g, ' ') %> Meaning in Bengali at sobdartho.com | <%= word.replace(/-/g, ' ') %> শব্দের বাংলা অর্থ " />
+    <meta property="og:url" content="https://sobdartho.com/dictionary/<%= word%>" />
+    <meta property="og:description" content="<%= word.replace(/-/g, ' ') %> meaning in Bengali - <%- info.meaning.replace(/-/g, ' ')%>; | <%= word.replace(/-/g, ' ') %> এর বাংলা অর্থ, What is the definition of <%= word.replace(/-/g, ' ') %> in Bengali? What is the meaning of <%= word.replace(/-/g, ' ') %> in Bengali?" />
+    <meta property="og:site_name" content="sobdartho.com" />
+
+   <link rel="canonical" href="https://sobdartho.com/dictionary/<%= word%>">
+   
+   <%- include('../partials/css.ejs'); %>
+
+   <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "url": "https://sobdartho.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://sobdartho.com/dictionary/{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+
+
+<body>
+    <%- include('../partials/header_nav.ejs'); %>
+ 
+    <div class="area">
+        <div class="word-search">
+            
+            <div class="home-page-header-title">
+                English to Bengali Dictionary
+              </div>
+            <form method="get" action="">
+                <label>
+                    <input type="text" name="query" id="query" value="<%= word.replace(/-/g, ' ') %>" placeholder="Type Word...">
+                </label>
+                <button>Search</button>
+            </form>
+        </div>
+
+        <div class="next-prev">
+            <span class="prev"><a href="/dictionary/<%= info.prev %>"> << <%= info.prev.replace(/-/g, ' ') %></a> </span>
+            <span class="next"><a href="/dictionary/<%= info.next_word %>">  <%= info.next_word.replace(/-/g, ' ') %> >></a></span>
+        </div>
+        <!--meaning output section-->
+        <div class="main">
+            
+    <!-- Breadcrumb Starts  -->
+    <div class="breadcrumb" itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList">
+
+    <span itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem">
+    <a href="https://sobdartho.com/" itemprop="item" title="Home">
+    <meta content="1" itemprop="position">
+    <span itemprop="name">Home</span></a>
+    </span>
+    
+    
+     &nbsp;›&nbsp;
+    
+    
+    <span itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem">
+    <meta content="2" itemprop="position">
+    <a href="https://sobdartho.com/dictionary" itemprop="item" title="English-to-Bengali">
+    <span itemprop="name">English to Bengali</span>
+    </a>
+    </span>
+    
+    
+     &nbsp;›&nbsp;
+    
+    <span itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem">
+    <meta content="3" itemprop="position">
+    <span itemprop="name"><%= word.replace(/-/g, ' ') %> Meaning in Bengali - <%= word.replace(/-/g, ' ') %> বাংলা অর্থ</span>
+    </span>
+    
+    
+    </div>
+    
+    <!-- Breadcrumb Ends  -->
+            
+            
+            <div id="meaning" class="meaning outputs">
+
+                <h1><%= word.replace(/-/g, ' ') %> Meaning in Bengali</h1><br>
+                
+<!-- Ezoic - under_page_title - under_page_title -->
+<div id="ezoic-pub-ad-placeholder-108"> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- Under Title -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="3299260492"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<!-- End Ezoic - under_page_title - under_page_title -->
+                <br>
+                
+                <% if(info.meaning){%>
+                 <span class="main-meaning"><%- info.meaning
+                    .replace(/-/g, ' ')%></span>
+                <% } %>
+<!-- Ezoic - incontent_6 - incontent_6 -->
+<div id="ezoic-pub-ad-placeholder-111"> </div>
+<!-- End Ezoic - incontent_6 - incontent_6 -->
+            </div>
+
+<!-- Ezoic - under_first_paragraph - under_first_paragraph -->
+<div id="ezoic-pub-ad-placeholder-104"> </div>
+<!-- End Ezoic - under_first_paragraph - under_first_paragraph -->
+
+            <% if(info.extra_meaning){%>
+                <div id="more-meaning" class="outputs">
+                     <p><%- info.extra_meaning %></p>
+                </div>
+            <% } %>
+<!-- Ezoic - under_second_paragraph - under_second_paragraph -->
+<div id="ezoic-pub-ad-placeholder-105"> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- under 2nd paragraph -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="8343703613"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<!-- End Ezoic - under_second_paragraph - under_second_paragraph -->
+            <% if(info.noun){%>
+            <div id="noun" class="outputs">
+                <h2>Noun:</h2>
+                 <p><%- info.noun %></p>
+            </div>
+            <% } %>
+
+            <% if(info.verb){%>
+            <div id="verb" class="outputs">
+                <h2>Verb:</h2>
+                 <p><%- info.verb %></p>
+            </div>
+            <% } %>
+
+            <% if(info.adjective){%>
+            <div id="adjective" class="outputs">
+                <h2>Adjective:</h2>
+                 <p><%- info.adjective %></p>
+            </div>
+            <% } %>
+<!-- Ezoic - mid_content - mid_content -->
+<div id="ezoic-pub-ad-placeholder-110"> </div>
+<!-- End Ezoic - mid_content - mid_content -->
+            <% if(info.determiner){%>
+            <div class="outputs">
+                <h2>Determiner:</h2>
+                 <p><%- info.determiner %></p>
+            </div>
+            <% } %>
+
+            <% if(info.adverb){%>
+                <div id="adverb" class="outputs">
+                    <h2>Adverb:</h2>
+                     <p><%- info.adverb %></p>
+                </div>
+            <% } %>
+
+            <% if(info.pronoun){%>
+                <div id="pronoun" class="outputs">
+                    <h2>Pronoun:</h2>
+                     <p><%- info.pronoun %></p>
+                </div>
+            <% } %>
+
+            <% if(info.preposition){%>
+                <div id="preposition" class="outputs">
+                    <h2>Preposition:</h2>
+                     <p><%- info.preposition %></p>
+                </div>
+            <% } %>
+
+            <% if(info.conjunction){%>
+                <div id="conjunction" class="outputs">
+                    <h2>Conjunction:</h2>
+                     <p><%- info.conjunction %></p>
+                </div>
+            <% } %>
+
+            <% if(info.interjection){%>
+                <div id="interjection" class="outputs">
+                    <h2>Interjection:</h2>
+                     <p><%- info.interjection %></p>
+                </div>
+            <% } %>
+
+
+
+
+<!-- Table of Content Starts -->
+                <br><br>
+                <div class="post-navigation">
+                    <div class="nav-title">Table of Contents</div>
+                    <ul>
+                        <li><a title="Meaning" href="#meaning">Meaning</a></li>
+                        <% if(info.adverb){%><li><a title="adverb" href="#adverb">Adverb</a></li><%}%> <% if(info.pronoun){%><li><a title="pronoun" href="#pronoun">Pronoun</a></li><%}%> <% if(info.preposition){%><li><a title="preposition" href="#preposition">Preposition</a></li><%}%> <% if(info.conjunction){%><li><a title="conjunction" href="#conjunction">Conjunction</a></li><%}%> <% if(info.interjection){%><li><a title="interjection" href="#interjection">Interjection</a></li><%}%> <% if(info.similer_words){%><li><a title="similer-words" href="#similer-words">Similer Words</a></li><%}%> <% if(info.bangla_example){%><li><a title="bangla-example" href="#bangla-example">Bengali Example</a></li><%}%> <% if(info.english_example){%><li><a title="english-example" href="#english-example">English Example</a></li><%}%> <% if(info.english_meaning){%><li><a title="english-meaning" href="#english-meaning">english-meaning</a></li><%}%> <% if(info.synonym){%><li><a title="synonym" href="#synonym">Synonym</a></li><%}%> <% if(info.antonym){%><li><a title="antonym" href="#antonym">Antonym</a></li><%}%><li><a title="other-site" href="#other-site">Other Sites</a></li>
+
+                    </ul>
+                </div>
+                <br><br>
+<!-- Table of Content Ends -->
+
+
+
+            <% if(info.similer_words){%>
+                <div id="similer-words" class="similer-words outputs">
+                <h2> Similer Words:</h2>
+                <%let similer = info.similer_words.split("\n");%>
+                <% similer.forEach((element,i) => { %>
+                <%- `<a href="/dictionary/${element}">${element.replace(/-/g, ' ')}</a><br>` %>
+                <% } )%>
+                </div>
+            <% } %>
+
+            <% if(info.bangla_example){%>
+                <div id="bangla-example" class="outputs">
+                    <h2><%= word.replace(/-/g, ' ') %> শব্দের বাংলা অর্থ এর উদাহরণ:</h2>
+                     <p><%- info.bangla_example.replace(/\n/g, '<br><br>') %></p>
+                </div>
+            <% } %>
+
+            <% if(info.english_example){%>
+                <div id="english-example" class="outputs">
+                    <h2><%= word.replace(/-/g, ' ') %>'s Usage Examples:</h2>
+                    <% let example = info.english_example.split("\n") %>
+                    <% let out = [...new Set(example)]; %>
+                    <% out.forEach((element,i) => { %>
+                    <p><%- element.replace(/&/g,'"').replace("$","'").replace("$","'") %></p><br>
+                    <% } )%>
+                </div>
+            <% } %>
+
+            <% if(info.english_meaning){%>
+                <div id="english-meaning" class="outputs">
+                    <h2><%= word.replace(/-/g, ' ') %>'s Meaning':</h2>
+                     <p><%- info.english_meaning %></p>
+                </div>
+            <% } %>
+
+            <% if(info.synonym){%>
+                <div id="synonym" class="outputs">
+                    <h2>Synonyms:</h2>
+                     <p><%- info.synonym %></p>
+                </div>
+            <% } %>
+
+            <% if(info.antonym){%>
+                <div id="antonym" class="outputs">
+                    <h2>Antonyms:</h2>
+                     <p><%- info.antonym %></p>
+                </div>
+            <% } %>
+<!-- Ezoic - incontent_5 - incontent_5 -->
+<div id="ezoic-pub-ad-placeholder-107"> </div>
+<!-- End Ezoic - incontent_5 - incontent_5 -->
+            <div id="other-site" class="othersite outputs">
+                <h2><span class="main-word"><%= word.replace(/-/g, ' ') %></span>'s Meaning in Other Sites </h2>
+                <ul>
+                    <li><a href="https://www.dictionary.com/browse/<%= word%>" rel="noopener" target="_blank">Dictinary</a></li>
+                    <li><a href="https://translate.google.com/#auto/bn/<%= word%>" rel="noopener" target="_blank">Google Translate</a></li>
+                    <li><a href="https://www.merriam-webster.com/dictionary/<%= word%>" rel="noopener" target="_blank">Merriam-Webster</a></li>
+                    <li><a href="https://www.oxfordlearnersdictionaries.com/definition/english/<%= word%>" rel="noopener" target="_blank">Oxford</a></li>
+                </ul>
+            </div>
+
+
+
+
+
+            <!-- below main dev ends -->
+        </div>
+
+
+        <aside>
+            <div class="box">
+                
+<!-- Ezoic - sidebar top - sidebar -->
+<div id="ezoic-pub-ad-placeholder-101"> </div>
+<!-- End Ezoic - sidebar top - sidebar -->
+                
+            </div>
+            <div class="box">
+                <div class="head">
+                    <h3>Top Words of This Week</h3>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li> <a href="https://sobdartho.com/dictionary/gods">Gods</a> </li>
+                        <li> <a href="https://sobdartho.com/dictionary/humanities">Humanities</a> </li>
+                        <li> <a href="https://sobdartho.com/dictionary/convicted">Convicted</a> </li>
+                        <li> <a href="https://sobdartho.com/dictionary/actress">Actress</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box">
+                
+<!-- Ezoic - sidebar_middle - sidebar_middle -->
+<div id="ezoic-pub-ad-placeholder-109"> </div>
+<!-- End Ezoic - sidebar_middle - sidebar_middle -->
+                
+            </div>
+            
+            <div class="box">
+<!-- Ezoic - sidebar_bottom - sidebar_bottom -->
+<div id="ezoic-pub-ad-placeholder-102"> </div>
+<!-- End Ezoic - sidebar_bottom - sidebar_bottom -->
+                
+            </div>
+
+        </aside>
+
+
+
+
+        <%- include('../partials/footer.ejs'); %>
+
+
+
+
+    </div>
+
+
+    <script type="text/javascript">
+        function toggle() {
+            var test = document.getElementById("navbar");
+            if (test.className == "hidden") {
+                test.className = "show";
+            } else {
+                test.className = "hidden";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
+
